@@ -31,7 +31,13 @@ ylim <- list(
 ui <- fluidPage(
   
   # initiate Google Charts and set font and style
-  googleChartsInit(),
+  HTML('
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+  google.charts.load(\'current\', {packages: [ "corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+</script>
+<script src="bindings.js"></script>'),
   
   tags$link(
     href = paste0("http://fonts.googleapis.com/css?",
