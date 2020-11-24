@@ -9,5 +9,3 @@ Source of inspiration: https://www.gapminder.org/whc/
 Data: https://www.gapminder.org/data/
 
 Visualization inspired by: https://shiny.rstudio.com/gallery/google-charts.html
-
-***Note***: Currently the app is only running properly locally if you copy *bindings.js* from the googleCharts library directory to the www directory in the shiny library directory. There appears to be some compatibility/integration issue with shinyapps.io at the moment (https://github.com/jcheng5/googleCharts/issues/12). 
